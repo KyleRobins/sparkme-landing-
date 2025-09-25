@@ -54,7 +54,7 @@ export function CtaSection() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
             <InteractiveButton
               size="lg"
-              className="text-lg px-8 py-6 bg-primary hover:bg-primary/90 text-primary-foreground glow-cyan"
+              className="w-full sm:w-auto text-base sm:text-lg px-8 py-5 bg-primary hover:bg-primary/90 text-primary-foreground glow-cyan"
               asChild
             >
               <a href="mailto:contactpoint@sparkme.space?subject=SPARKme%202%20Public%20Officers%20Application">
@@ -66,7 +66,7 @@ export function CtaSection() {
             <InteractiveButton
               variant="outline"
               size="lg"
-              className="text-lg px-8 py-6 bg-transparent border-secondary text-secondary-foreground hover:bg-secondary hover:text-secondary-foreground glow-orange"
+              className="w-full sm:w-auto text-base sm:text-lg px-8 py-5 bg-transparent border-secondary text-secondary-foreground hover:bg-secondary hover:text-secondary-foreground glow-orange"
               asChild
             >
               <a href="mailto:contactpoint@sparkme.space?subject=SPARKme%202%20Student%20Programme%20Application">
@@ -76,7 +76,7 @@ export function CtaSection() {
             </InteractiveButton>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-2xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 max-w-2xl mx-auto">
             <div className="text-center p-4 rounded-lg bg-card/50 border border-border/50">
               <div className="text-2xl font-bold text-primary mb-1">Free</div>
               <div className="text-sm text-muted-foreground">Training Program</div>
@@ -91,7 +91,7 @@ export function CtaSection() {
             </div>
           </div>
 
-          <div className="mt-14 grid gap-6 sm:grid-cols-3">
+          <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {highlightImages.map((image) => (
               <div
                 key={image.title}

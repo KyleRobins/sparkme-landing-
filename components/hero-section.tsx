@@ -7,7 +7,7 @@ import Image from "next/image"
 
 export function HeroSection() {
   return (
-    <section className="relative py-20 lg:py-32 overflow-hidden">
+    <section className="relative overflow-hidden py-16 sm:py-20 lg:py-32">
       <div className="absolute inset-0 z-0">
         <Image
           src="https://res.cloudinary.com/dzw5pskk1/image/upload/v1758545453/space-8381874_1920_igybxo.jpg"
@@ -46,7 +46,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-xl md:text-2xl text-muted-foreground text-balance mb-8 max-w-3xl mx-auto leading-relaxed"
+            className="text-lg md:text-2xl text-muted-foreground text-balance mb-8 max-w-3xl mx-auto leading-relaxed"
           >
             International training in Nairobi equipping Public Officers and young talent with advanced Earth Observation,
             satellite data, robotics, IoT, and space technology skills to power evidence-based innovation.
@@ -56,11 +56,11 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16"
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 sm:mb-16"
           >
             <InteractiveButton
               size="lg"
-              className="text-lg px-8 py-6 bg-primary hover:bg-primary/90 text-primary-foreground"
+              className="w-full sm:w-auto text-base sm:text-lg px-8 py-5 bg-primary hover:bg-primary/90 text-primary-foreground"
               asChild
             >
               <a href="mailto:contactpoint@sparkme.space?subject=SPARKme%202%20Public%20Officers%20Application">
@@ -72,7 +72,7 @@ export function HeroSection() {
             <InteractiveButton
               variant="outline"
               size="lg"
-              className="text-lg px-8 py-6 border-primary/30 text-foreground hover:bg-primary/10"
+              className="w-full sm:w-auto text-base sm:text-lg px-8 py-5 border-primary/30 text-foreground hover:bg-primary/10"
               asChild
             >
               <a href="mailto:contactpoint@sparkme.space?subject=SPARKme%202%20Student%20Programme%20Application">
@@ -86,7 +86,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-20"
+            className="grid grid-cols-2 gap-4 sm:gap-6 md:grid-cols-4 md:gap-8 mt-12 sm:mt-16"
           >
             <div className="bg-card/60 border border-border rounded-lg p-6 backdrop-blur-sm">
               <div className="text-3xl font-bold text-primary mb-2">4 Months</div>

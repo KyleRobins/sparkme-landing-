@@ -13,7 +13,7 @@ export function Programs() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <div className="grid gap-6 md:grid-cols-2 md:gap-8 max-w-6xl mx-auto">
           <Card className="border-blue-500/20 bg-gradient-to-br from-card to-blue-950/10">
             <CardHeader>
               <div className="flex items-center gap-2 mb-2">
@@ -30,7 +30,7 @@ export function Programs() {
                 Tailored for officers in agriculture, urban planning, environment, security, and public administration. Build practical capability to turn EO insights into territorial analysis and data-driven policies.
               </p>
 
-              <div className="grid grid-cols-2 gap-4 text-sm">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
                 <div className="flex items-center gap-2">
                   <Clock className="h-4 w-4 text-blue-400" />
                   <span>25 hours / month</span>
@@ -76,7 +76,7 @@ export function Programs() {
                 Intensive pathway for university graduates to master EO, AI, drones, IoT, and satellite data integration. Gain global exposure through interactive labs and real field assignments.
               </p>
 
-              <div className="grid grid-cols-2 gap-4 text-sm">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
                 <div className="flex items-center gap-2">
                   <Clock className="h-4 w-4 text-green-400" />
                   <span>8 months duration</span>

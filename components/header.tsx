@@ -2,12 +2,19 @@
 
 import { Button } from "@/components/ui/button"
 import { ThemeToggle } from "@/components/theme-toggle"
-import { motion } from "framer-motion"
+import { AnimatePresence, motion } from "framer-motion"
 import { Menu, X } from "lucide-react"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+  useEffect(() => {
+    document.body.style.overflow = isMenuOpen ? "hidden" : ""
+    return () => {
+      document.body.style.overflow = ""
+    }
+  }, [isMenuOpen])
 
   return (
     <motion.header
@@ -45,16 +52,9 @@ export function Header() {
         </nav>
 
         <div className="flex items-center space-x-4">
-          <ThemeToggle />
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.5 }}
-          >
-            <Button variant="ghost" className="hidden sm:inline-flex" asChild>
-              <a href="#about">Programme Overview</a>
-            </Button>
-          </motion.div>
+          <div className="hidden sm:block">
+            <ThemeToggle />
+          </div>
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -74,28 +74,35 @@ export function Header() {
         </div>
       </div>
 
-      {/* Mobile menu */}
-      {isMenuOpen && (
-        <motion.div
-          initial={{ opacity: 0, height: 0 }}
-          animate={{ opacity: 1, height: "auto" }}
-          exit={{ opacity: 0, height: 0 }}
-          className="md:hidden border-t border-border bg-background/95 backdrop-blur-sm"
-        >
-          <nav className="container mx-auto px-4 py-4 flex flex-col space-y-4">
-            {["About", "Programs", "Partners", "FAQ", "Apply"].map((item) => (
-              <a
-                key={item}
-                href={`#${item.toLowerCase()}`}
-                className="text-muted-foreground hover:text-foreground transition-colors"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {item}
-              </a>
-            ))}
-          </nav>
-        </motion.div>
-      )}
+      <AnimatePresence>
+        {isMenuOpen && (
+          <motion.div
+            key="mobile-nav"
+            initial={{ opacity: 0, y: -16 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -16 }}
+            transition={{ duration: 0.2 }}
+            className="md:hidden border-t border-border bg-background/98 backdrop-blur-lg"
+          >
+            <nav className="container mx-auto px-4 py-6 flex flex-col space-y-5 text-base">
+              {["About", "Programs", "Partners", "FAQ", "Apply"].map((item) => (
+                <a
+                  key={item}
+                  href={`#${item.toLowerCase()}`}
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {item}
+                </a>
+              ))}
+              <div className="flex items-center justify-between pt-6 border-t border-border/40">
+                <span className="text-sm text-muted-foreground">Theme</span>
+                <ThemeToggle />
+              </div>
+            </nav>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </motion.header>
   )
 }

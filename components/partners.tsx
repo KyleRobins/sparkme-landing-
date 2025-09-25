@@ -17,7 +17,7 @@ const partnerData = [
   },
   {
     name: "European Space Agency (ESA)",
-    logo: "/assets/european-space-agency.jpg",
+    logo: "/assets/european-space-agency.png",
     description: "Strategic backing for EO innovation",
   },
   {
@@ -26,29 +26,14 @@ const partnerData = [
     description: "Certification partner for energy efficiency",
   },
   {
-    name: "Copernicus Academy Basilicata (IT)",
-    logo: "/copernicus-academy-logo.jpg",
-    description: "Advanced EO curriculum partner",
-  },
-  {
     name: "E4Impact Foundation",
-    logo: "/ehimpact-foundation-logo.jpg",
+    logo: "/assets/e4impact-logo.png",
     description: "Hosts the Entrepreneurship Centre and SDIC in Nairobi",
   },
   {
     name: "EagleProjects S.p.A. (IT)",
     logo: "/assets/eagleprojects-400x400.png",
     description: "Digital platforms and remote sensing solutions",
-  },
-  {
-    name: "Jomo Kenyatta University of Agriculture and Technology (JKUAT)",
-    logo: "/jkuat-university-logo-kenya.jpg",
-    description: "Kenyan science and technology leader",
-  },
-  {
-    name: "Ministry of Investments, Trade and Industry, Kenya",
-    logo: "/kenya-ministry-of-investments-logo.jpg",
-    description: "Government champion for industrial growth",
   },
 ]
 
@@ -137,7 +122,7 @@ export function Partners() {
         <div className="relative">
           <button
             type="button"
-            className="absolute left-0 top-1/2 hidden -translate-y-1/2 rounded-full bg-background/80 p-2 text-muted-foreground shadow-sm transition hover:text-foreground disabled:cursor-not-allowed disabled:opacity-40 md:inline-flex"
+            className="absolute left-2 top-1/2 hidden -translate-y-1/2 rounded-full bg-background/80 p-2 text-muted-foreground shadow-sm transition hover:text-foreground disabled:cursor-not-allowed disabled:opacity-40 md:inline-flex"
             onClick={() => scrollBy("left")}
             disabled={!canScrollPrev}
             aria-label="Scroll to previous partners"
@@ -146,7 +131,7 @@ export function Partners() {
           </button>
           <div
             ref={scrollerRef}
-            className="flex overflow-x-auto gap-8 py-8 px-2 md:px-12 scroll-smooth snap-x snap-mandatory [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
+            className="flex overflow-x-auto gap-6 py-8 px-2 sm:px-6 md:px-12 scroll-smooth snap-x snap-mandatory [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
             role="list"
             aria-label="Partner logos"
           >
@@ -154,9 +139,9 @@ export function Partners() {
               <div
                 key={partner.name}
                 role="listitem"
-                className="flex min-w-[160px] flex-col items-center gap-4 snap-start"
+                className="flex min-w-[150px] flex-col items-center gap-4 snap-start"
               >
-                <div className="flex h-24 w-40 items-center justify-center rounded-2xl bg-transparent p-4">
+                <div className="flex h-20 w-36 items-center justify-center rounded-2xl bg-transparent p-4 sm:h-24 sm:w-40">
                   <Image
                     src={partner.logo || "/placeholder.svg"}
                     alt={`${partner.name} logo`}
@@ -171,7 +156,7 @@ export function Partners() {
           </div>
           <button
             type="button"
-            className="absolute right-0 top-1/2 hidden -translate-y-1/2 rounded-full bg-background/80 p-2 text-muted-foreground shadow-sm transition hover:text-foreground disabled:cursor-not-allowed disabled:opacity-40 md:inline-flex"
+            className="absolute right-2 top-1/2 hidden -translate-y-1/2 rounded-full bg-background/80 p-2 text-muted-foreground shadow-sm transition hover:text-foreground disabled:cursor-not-allowed disabled:opacity-40 md:inline-flex"
             onClick={() => scrollBy("right")}
             disabled={!canScrollNext}
             aria-label="Scroll to next partners"

@@ -28,7 +28,7 @@ export function Features() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+        <div className="grid gap-6 md:grid-cols-2 max-w-5xl mx-auto">
           <Card className="h-full border-primary/20">
             <CardHeader>
               <CardTitle className="text-xl">Why Participate? (Public Officers)</CardTitle>
