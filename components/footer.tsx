@@ -1,31 +1,64 @@
 import { Mail, Phone, MapPin, Linkedin, Twitter } from "lucide-react"
 
+const usefulLinks = [
+  { label: "About", href: "#about" },
+  { label: "Programs", href: "#programs" },
+  { label: "Partners", href: "#partners" },
+  { label: "FAQ", href: "#faq" },
+  { label: "Apply", href: "#apply" },
+]
+
+const programmeHighlights = [
+  { label: "Public Officers Programme", href: "#apply" },
+  { label: "Students Programme", href: "#apply" },
+  { label: "Remote Labs Access", href: "#programs" },
+  { label: "Internship Placements", href: "#programs" },
+]
+
 export function Footer() {
   return (
-    <footer className="border-t border-border bg-background">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="space-y-4">
-            <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">S2</span>
+    <footer className="relative overflow-hidden border-t border-white/10 text-slate-100">
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <img
+          src="/assets/footer.png"
+          alt="Space themed background"
+          className="h-full w-full object-cover"
+        />
+        <div className="absolute inset-0 bg-black/45" />
+      </div>
+
+      <div className="container mx-auto px-4 py-16 relative z-10">
+        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
+          <div className="space-y-5">
+            <div className="flex items-center gap-3">
+              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary/80">
+                <span className="text-lg font-bold text-white">S2</span>
               </div>
-              <span className="text-xl font-bold text-foreground">SPARKme 2</span>
+              <span className="text-2xl font-semibold tracking-tight text-white">SPARKme 2</span>
             </div>
-            <p className="text-muted-foreground leading-relaxed">
-              Harnessing Earth Observation for Public Policy Impact. International initiative empowering Kenya through
-              space technology training.
+            <p className="text-sm leading-relaxed text-slate-200/90">
+              Building Kenya's space innovation capacity through immersive Earth Observation training, strategic
+              partnerships, and mission-driven mentorship for public officers and emerging talent.
             </p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+            <div className="flex items-center gap-3">
+              <a
+                href="https://twitter.com"
+                aria-label="Twitter"
+                className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-white/20"
+              >
                 <Twitter className="h-5 w-5" />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+              <a
+                href="https://linkedin.com"
+                aria-label="LinkedIn"
+                className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-white/20"
+              >
                 <Linkedin className="h-5 w-5" />
               </a>
               <a
                 href="mailto:info@sparkme2.org"
-                className="text-muted-foreground hover:text-foreground transition-colors"
+                aria-label="Email"
+                className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-white/20"
               >
                 <Mail className="h-5 w-5" />
               </a>
@@ -33,94 +66,66 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="font-semibold text-foreground mb-4">Programs</h3>
-            <ul className="space-y-2">
-              <li>
-                <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Public Officers Program
-                </a>
+            <h3 className="text-lg font-semibold text-white">Contact</h3>
+            <p className="mt-4 text-sm text-slate-200/90">
+              Nairobi Satellite &amp; Digital Innovation Centre<br />Accelerator Hub, SDIC Complex
+            </p>
+            <ul className="mt-6 space-y-4 text-sm text-slate-200/90">
+              <li className="flex items-start gap-3">
+                <MapPin className="mt-1 h-4 w-4 text-primary" />
+                <span>P.O. Box 15635 – 00509 Nairobi, Kenya</span>
               </li>
-              <li>
-                <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Students Program
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Application Process
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Program Schedule
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="font-semibold text-foreground mb-4">Resources</h3>
-            <ul className="space-y-2">
-              <li>
-                <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                  About SPARKme 2
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Partners
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Success Stories
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                  News & Updates
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="font-semibold text-foreground mb-4">Contact</h3>
-            <ul className="space-y-3">
-              <li className="flex items-center space-x-2">
-                <MapPin className="h-4 w-4 text-blue-400" />
-                <span className="text-muted-foreground text-sm">Nairobi, Kenya</span>
-              </li>
-              <li className="flex items-center space-x-2">
-                <Mail className="h-4 w-4 text-blue-400" />
-                <a
-                  href="mailto:info@sparkme2.org"
-                  className="text-muted-foreground hover:text-foreground transition-colors text-sm"
-                >
+              <li className="flex items-start gap-3">
+                <Mail className="mt-1 h-4 w-4 text-primary" />
+                <a href="mailto:info@sparkme2.org" className="hover:text-white transition">
                   info@sparkme2.org
                 </a>
               </li>
-              <li className="flex items-center space-x-2">
-                <Phone className="h-4 w-4 text-blue-400" />
-                <span className="text-muted-foreground text-sm">+254 XXX XXX XXX</span>
+              <li className="flex items-start gap-3">
+                <Phone className="mt-1 h-4 w-4 text-primary" />
+                <span>+254 712 000 000</span>
               </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-semibold text-white">Useful Links</h3>
+            <ul className="mt-4 space-y-3 text-sm text-slate-200/90">
+              {usefulLinks.map((link) => (
+                <li key={link.label}>
+                  <a href={link.href} className="hover:text-white transition">
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-semibold text-white">Programme Highlights</h3>
+            <ul className="mt-4 space-y-3 text-sm text-slate-200/90">
+              {programmeHighlights.map((item) => (
+                <li key={item.label}>
+                  <a href={item.href} className="hover:text-white transition">
+                    {item.label}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-border mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-muted-foreground text-sm">
-            © 2024 SPARKme 2. All rights reserved. Powered by OpenET Technologies S.p.A.
-          </p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+        <div className="mt-14 border-t border-white/15 pt-8 text-sm text-slate-200/80 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+          <p>© 2025 SPARKme 2. All rights reserved. Powered by OpenET Technologies S.p.A.</p>
+          <div className="flex flex-wrap gap-6 text-slate-200/80">
+            <a href="#privacy" className="hover:text-white transition">
               Privacy Policy
             </a>
-            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+            <a href="#terms" className="hover:text-white transition">
               Terms of Service
             </a>
-            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
-              Program Guidelines
+            <a href="#program-guidelines" className="hover:text-white transition">
+              Programme Guidelines
             </a>
           </div>
         </div>

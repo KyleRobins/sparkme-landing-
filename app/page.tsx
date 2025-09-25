@@ -17,7 +17,7 @@ export default function HomePage() {
         <Features />
         <Partners />
         <FAQ />
-        <CtaSection />
+        
       </main>
       <Footer />
     </div>
