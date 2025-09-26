@@ -35,17 +35,17 @@ export function Footer() {
               <Image
                 src="/assets/spark-me-dark.png"
                 alt="SPARKme logo"
-                width={380}
-                height={162}
-                className="h-10 w-auto object-contain dark:hidden"
+                width={360}
+                height={120}
+                className="h-14 w-auto object-contain dark:hidden"
                 priority
               />
               <Image
                 src="/assets/spark-me-dark.png"
                 alt="SPARKme logo"
-                width={380}
-                height={162}
-                className="hidden h-10 w-auto object-contain dark:block"
+                width={360}
+                height={120}
+                className="hidden h-14 w-auto object-contain dark:block"
                 priority
               />
             </div>

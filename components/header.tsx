@@ -34,16 +34,16 @@ export function Header() {
           <Image
             src="/assets/spark-me-light.png"
             alt="SPARKme logo"
-            width={148}
-            height={36}
+            width={360}
+            height={120}
             className="h-9 w-auto object-contain dark:hidden"
             priority
           />
           <Image
             src="/assets/spark-me-dark.png"
             alt="SPARKme logo"
-            width={148}
-            height={36}
+            width={360}
+            height={120}
             className="hidden h-9 w-auto object-contain dark:block"
             priority
           />
