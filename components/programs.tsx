@@ -20,7 +20,7 @@ export function Programs() {
                 <Users className="h-6 w-6 text-blue-400" />
                 <Badge variant="secondary">Public Officers</Badge>
               </div>
-              <CardTitle className="text-2xl">CCN1 SPARKme Programme</CardTitle>
+              <CardTitle className="text-2xl">SPARKme Programme</CardTitle>
               <CardDescription className="text-base">
                 Strengthening institutional capacity through satellite data
               </CardDescription>
@@ -52,7 +52,7 @@ export function Programs() {
               </div>
 
               <a
-                href="mailto:contactpoint@sparkme.space?subject=SPARKme%202%20Public%20Officers%20Application"
+                href="mailto:contactpoint@sparkme.space?subject=SPARKme%20Public%20Officers%20Application"
                 className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline"
               >
                 Apply Here
@@ -98,7 +98,7 @@ export function Programs() {
               </div>
 
               <a
-                href="mailto:contactpoint@sparkme.space?subject=SPARKme%202%20Student%20Programme%20Application"
+                href="mailto:contactpoint@sparkme.space?subject=SPARKme%20Student%20Programme%20Application"
                 className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline"
               >
                 Apply Here

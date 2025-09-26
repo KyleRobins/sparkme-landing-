@@ -19,9 +19,9 @@ const spaceGrotesk = Space_Grotesk({
 })
 
 export const metadata: Metadata = {
-  title: "SPARKme 2 - Earth Observation Training Programme",
+  title: "SPARKme - Earth Observation Training Programme",
   description:
-    "Advanced Training Programme for Public Officers - Harnessing Earth Observation for Public Policy Impact",
+    "Advanced training programme empowering Kenya's public officers and students to harness Earth Observation for public policy impact.",
   generator: "v0.app",
 }
 

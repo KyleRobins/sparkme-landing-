@@ -45,7 +45,7 @@ export function CtaSection() {
             </span>
           </div>
 
-          <h2 className="text-3xl md:text-5xl font-bold text-balance mb-6">SPARKme 2 Applications</h2>
+          <h2 className="text-3xl md:text-5xl font-bold text-balance mb-6">SPARKme Applications</h2>
 
           <p className="text-xl text-muted-foreground text-balance mb-8 max-w-3xl mx-auto leading-relaxed">
             Applications for the October 2025 intake are open for both the Public Officers track and the Students programme. Reach out to the SPARKme team to confirm eligibility and reserve a seat.
@@ -57,7 +57,7 @@ export function CtaSection() {
               className="w-full sm:w-auto text-base sm:text-lg px-8 py-5 bg-primary hover:bg-primary/90 text-primary-foreground glow-cyan"
               asChild
             >
-              <a href="mailto:contactpoint@sparkme.space?subject=SPARKme%202%20Public%20Officers%20Application">
+              <a href="mailto:contactpoint@sparkme.space?subject=SPARKme%20Public%20Officers%20Application">
                 <Users className="h-5 w-5" />
                 Apply for Public Officers Programme
                 <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
@@ -69,7 +69,7 @@ export function CtaSection() {
               className="w-full sm:w-auto text-base sm:text-lg px-8 py-5 bg-transparent border-secondary text-secondary-foreground hover:bg-secondary hover:text-secondary-foreground glow-orange"
               asChild
             >
-              <a href="mailto:contactpoint@sparkme.space?subject=SPARKme%202%20Student%20Programme%20Application">
+              <a href="mailto:contactpoint@sparkme.space?subject=SPARKme%20Student%20Programme%20Application">
                 <Rocket className="h-5 w-5" />
                 Apply for Students Programme
               </a>

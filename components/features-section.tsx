@@ -67,7 +67,7 @@ export function FeaturesSection() {
         >
           <h2 className="text-3xl md:text-5xl font-bold text-balance mb-6">Comprehensive Earth Observation Training</h2>
           <p className="text-xl text-muted-foreground text-balance max-w-3xl mx-auto leading-relaxed">
-            SPARKme 2 provides cutting-edge training in Earth Observation technologies, empowering public officers and
+            SPARKme provides cutting-edge training in Earth Observation technologies, empowering public officers and
             students to harness satellite data for sustainable development and policy innovation.
           </p>
         </motion.div>

@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { AnimatePresence, motion } from "framer-motion"
+import Image from "next/image"
 import { Menu, X } from "lucide-react"
 import { useEffect, useState } from "react"
 
@@ -24,16 +25,29 @@ export function Header() {
       className="border-b border-border bg-background/80 backdrop-blur-sm sticky top-0 z-50"
     >
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <motion.div
-          className="flex items-center space-x-3"
-          whileHover={{ scale: 1.05 }}
-          transition={{ type: "spring", stiffness: 400, damping: 10 }}
+        <motion.a
+          href="#top"
+          className="flex items-center gap-3"
+          whileHover={{ scale: 1.03 }}
+          transition={{ type: "spring", stiffness: 400, damping: 12 }}
         >
-          <div className="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
-            <span className="text-primary-foreground font-bold text-lg">S2</span>
-          </div>
-          <span className="text-xl font-bold text-foreground font-space-grotesk">SPARKme 2</span>
-        </motion.div>
+          <Image
+            src="/assets/spark-me-light.png"
+            alt="SPARKme logo"
+            width={148}
+            height={36}
+            className="h-9 w-auto object-contain dark:hidden"
+            priority
+          />
+          <Image
+            src="/assets/spark-me-dark.png"
+            alt="SPARKme logo"
+            width={148}
+            height={36}
+            className="hidden h-9 w-auto object-contain dark:block"
+            priority
+          />
+        </motion.a>
 
         <nav className="hidden md:flex items-center space-x-8">
           {["About", "Programs", "Partners", "FAQ", "Apply"].map((item, index) => (
@@ -63,7 +77,7 @@ export function Header() {
             whileTap={{ scale: 0.95 }}
           >
             <Button className="bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90" asChild>
-              <a href="mailto:contactpoint@sparkme.space?subject=SPARKme%202%20Application" className="text-primary-foreground">Apply Now</a>
+              <a href="mailto:contactpoint@sparkme.space?subject=SPARKme%20Application" className="text-primary-foreground">Apply Now</a>
             </Button>
           </motion.div>
 

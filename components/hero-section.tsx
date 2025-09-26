@@ -63,7 +63,7 @@ export function HeroSection() {
               className="w-full sm:w-auto text-base sm:text-lg px-8 py-5 bg-primary hover:bg-primary/90 text-primary-foreground"
               asChild
             >
-              <a href="mailto:contactpoint@sparkme.space?subject=SPARKme%202%20Public%20Officers%20Application">
+              <a href="mailto:contactpoint@sparkme.space?subject=SPARKme%20Public%20Officers%20Application">
                 <Users className="h-5 w-5" />
                 Apply for Public Officers Programme
                 <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
@@ -75,7 +75,7 @@ export function HeroSection() {
               className="w-full sm:w-auto text-base sm:text-lg px-8 py-5 border-primary/30 text-foreground hover:bg-primary/10"
               asChild
             >
-              <a href="mailto:contactpoint@sparkme.space?subject=SPARKme%202%20Student%20Programme%20Application">
+              <a href="mailto:contactpoint@sparkme.space?subject=SPARKme%20Student%20Programme%20Application">
                 <Satellite className="h-5 w-5" />
                 Apply for Students Programme
               </a>

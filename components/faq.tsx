@@ -2,9 +2,9 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 const faqs = [
   {
-    question: "What is SPARKme 2?",
+    question: "What is SPARKme?",
     answer:
-      "SPARKme 2 is an international training initiative equipping Public Officers and university graduates in Kenya with skills in Earth Observation (EO), satellite data, robotics, IoT, and emerging technologies through hands-on labs, mentorship, and digital platforms.",
+      "SPARKme is an international training initiative equipping public officers and university graduates in Kenya with skills in Earth Observation (EO), satellite data, robotics, IoT, and emerging technologies through hands-on labs, mentorship, and digital platforms.",
   },
   {
     question: "Who can participate?",
@@ -60,7 +60,7 @@ export function FAQ() {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Frequently Asked Questions</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Key information about eligibility, delivery, certification, and next steps for SPARKme 2 applicants.
+            Key information about eligibility, delivery, certification, and next steps for SPARKme applicants.
           </p>
         </div>
 

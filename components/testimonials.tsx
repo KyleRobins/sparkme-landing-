@@ -7,7 +7,7 @@ export function Testimonials() {
       name: "Dr. Sarah Kimani",
       role: "Senior Policy Analyst, Ministry of Environment",
       content:
-        "SPARKme 2 transformed how we approach environmental monitoring. The satellite data analysis skills I gained are now integral to our climate policy decisions.",
+        "SPARKme transformed how we approach environmental monitoring. The satellite data analysis skills I gained are now integral to our climate policy decisions.",
       rating: 5,
     },
     {

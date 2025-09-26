@@ -6,22 +6,27 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 
 const partnerData = [
   {
-    name: "OpenET Technologies S.p.A. (Italy)",
+    name: "OPENET Technologies S.p.A.",
     logo: "/assets/Logo_Openet.png",
     description: "Lead implementer bringing EO platforms to Kenya",
   },
   {
-    name: "Italian Space Agency (ASI)",
+    name: "EagleProjects S.p.A.",
+    logo: "/assets/eagleprojects-400x400.png",
+    description: "Sub-contractor delivering digital platforms and remote sensing solutions",
+  },
+  {
+    name: "Italian Space Agency",
     logo: "/assets/Agenzia_Spaziale_Italiana.webp",
     description: "Programme supporter providing satellite expertise",
   },
   {
-    name: "European Space Agency (ESA)",
+    name: "European Space Agency",
     logo: "/assets/european-space-agency.png",
     description: "Strategic backing for EO innovation",
   },
   {
-    name: "I.T.S. Academy Foundation of Basilicata (IT)",
+    name: "I.T.S. Academy Foundation of Basilicata",
     logo: "/assets/nuovo_logo_its.png",
     description: "Certification partner for energy efficiency",
   },
@@ -29,11 +34,6 @@ const partnerData = [
     name: "E4Impact Foundation",
     logo: "/assets/e4impact-logo.png",
     description: "Hosts the Entrepreneurship Centre and SDIC in Nairobi",
-  },
-  {
-    name: "EagleProjects S.p.A. (IT)",
-    logo: "/assets/eagleprojects-400x400.png",
-    description: "Digital platforms and remote sensing solutions",
   },
 ]
 
@@ -111,7 +111,7 @@ export function Partners() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            <span className="text-foreground">SPARKme 2</span>
+            <span className="text-foreground">SPARKme</span>
             <span className="text-primary"> Partnership Network</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">

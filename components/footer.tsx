@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { Mail, Phone, MapPin, Linkedin, Twitter } from "lucide-react"
 
 const usefulLinks = [
@@ -31,10 +32,22 @@ export function Footer() {
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div className="space-y-5">
             <div className="flex items-center gap-3">
-              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary/80">
-                <span className="text-lg font-bold text-white">S2</span>
-              </div>
-              <span className="text-2xl font-semibold tracking-tight text-white">SPARKme 2</span>
+              <Image
+                src="/assets/spark-me-dark.png"
+                alt="SPARKme logo"
+                width={380}
+                height={162}
+                className="h-10 w-auto object-contain dark:hidden"
+                priority
+              />
+              <Image
+                src="/assets/spark-me-dark.png"
+                alt="SPARKme logo"
+                width={380}
+                height={162}
+                className="hidden h-10 w-auto object-contain dark:block"
+                priority
+              />
             </div>
             <p className="text-sm leading-relaxed text-slate-200/90">
               Building Kenya's space innovation capacity through immersive Earth Observation training, strategic
@@ -116,7 +129,7 @@ export function Footer() {
         </div>
 
         <div className="mt-14 border-t border-white/15 pt-8 text-sm text-slate-200/80 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
-          <p>© 2025 SPARKme 2. All rights reserved. Powered by OpenET Technologies S.p.A.</p>
+          <p>© 2025 SPARKme. All rights reserved. Powered by OpenET Technologies S.p.A.</p>
           <div className="flex flex-wrap gap-6 text-slate-200/80">
             <a href="#privacy" className="hover:text-white transition">
               Privacy Policy
