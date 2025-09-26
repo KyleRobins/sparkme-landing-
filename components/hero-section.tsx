@@ -89,9 +89,9 @@ export function HeroSection() {
             className="grid grid-cols-2 gap-4 sm:gap-6 md:grid-cols-4 md:gap-8 mt-12 sm:mt-16"
           >
             <div className="bg-card/60 border border-border rounded-lg p-6 backdrop-blur-sm">
-              <div className="text-3xl font-bold text-primary mb-2">4 Months</div>
+              <div className="text-3xl font-bold text-primary mb-2">3 Days</div>
               <div className="text-sm text-muted-foreground">Public Officers Track</div>
-              <div className="text-xs text-muted-foreground mt-1">25 HOURS / MONTH</div>
+              <div className="text-xs text-muted-foreground mt-1">25 HOURS TOTAL</div>
             </div>
             <div className="bg-card/60 border border-border rounded-lg p-6 backdrop-blur-sm">
               <div className="text-3xl font-bold text-primary mb-2">8 Months</div>

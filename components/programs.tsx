@@ -33,7 +33,7 @@ export function Programs() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
                 <div className="flex items-center gap-2">
                   <Clock className="h-4 w-4 text-blue-400" />
-                  <span>25 hours / month</span>
+                  <span>25 hours (3 days training)</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <MapPin className="h-4 w-4 text-blue-400" />
