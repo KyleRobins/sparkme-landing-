@@ -19,7 +19,7 @@ const faqs = [
   {
     question: "When does the programme start and how long does it run?",
     answer:
-      "Public Officers Programme: Starts October 2025 and runs for 4 months. Students Programme: Starts October 2025 and runs for 8 months.",
+      "Public Officers Programme: Starts October 2025 and is delivered over 3 intensive days (25 hours total). Students Programme: Starts October 2025 and runs for 8 months.",
   },
   {
     question: "What will I learn?",
