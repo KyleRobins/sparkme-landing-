@@ -1,5 +1,5 @@
-import Image from "next/image"
-import { Mail, Phone, MapPin, Linkedin, Twitter } from "lucide-react"
+import Image from "next/image";
+import { Mail, Phone, MapPin, Linkedin, Twitter } from "lucide-react";
 
 const usefulLinks = [
   { label: "About", href: "#about" },
@@ -7,14 +7,14 @@ const usefulLinks = [
   { label: "Partners", href: "#partners" },
   { label: "FAQ", href: "#faq" },
   { label: "Apply", href: "#apply" },
-]
+];
 
 const programmeHighlights = [
   { label: "Public Officers Programme", href: "#apply" },
   { label: "Students Programme", href: "#apply" },
   { label: "Remote Labs Access", href: "#programs" },
   { label: "Internship Placements", href: "#programs" },
-]
+];
 
 export function Footer() {
   return (
@@ -50,26 +50,27 @@ export function Footer() {
               />
             </div>
             <p className="text-sm leading-relaxed text-slate-200/90">
-              Building Kenya's space innovation capacity through immersive Earth Observation training, strategic
-              partnerships, and mission-driven mentorship for public officers and emerging talent.
+              Building Kenya's space innovation capacity through immersive Earth
+              Observation training, strategic partnerships, and mission-driven
+              mentorship for public officers and emerging talent.
             </p>
             <div className="flex items-center gap-3">
               <a
-                href="https://twitter.com"
+                href="https://twitter.com/E4ICenterKenya"
                 aria-label="Twitter"
                 className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-white/20"
               >
                 <Twitter className="h-5 w-5" />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/company/e4impactcenter-kenya/"
                 aria-label="LinkedIn"
                 className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-white/20"
               >
                 <Linkedin className="h-5 w-5" />
               </a>
               <a
-                href="mailto:info@sparkme2.org"
+                href="mailto:accelerator.kenya@e4impact.org"
                 aria-label="Email"
                 className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-white/20"
               >
@@ -81,7 +82,8 @@ export function Footer() {
           <div>
             <h3 className="text-lg font-semibold text-white">Contact</h3>
             <p className="mt-4 text-sm text-slate-200/90">
-              Nairobi Satellite &amp; Digital Innovation Centre<br />Accelerator Hub, SDIC Complex
+              Nairobi Satellite &amp; Digital Innovation Centre SDIC Complex
+              E4impact Enterprenuership Center
             </p>
             <ul className="mt-6 space-y-4 text-sm text-slate-200/90">
               <li className="flex items-start gap-3">
@@ -90,13 +92,16 @@ export function Footer() {
               </li>
               <li className="flex items-start gap-3">
                 <Mail className="mt-1 h-4 w-4 text-primary" />
-                <a href="mailto:info@sparkme2.org" className="hover:text-white transition">
-                  info@sparkme2.org
+                <a
+                  href="mailto:info@sparkme2.org"
+                  className="hover:text-white transition"
+                >
+                  accelerator.kenya@e4impact.org
                 </a>
               </li>
               <li className="flex items-start gap-3">
                 <Phone className="mt-1 h-4 w-4 text-primary" />
-                <span>+254 712 000 000</span>
+                <span>+254 712 526 952</span>
               </li>
             </ul>
           </div>
@@ -115,7 +120,9 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold text-white">Programme Highlights</h3>
+            <h3 className="text-lg font-semibold text-white">
+              Programme Highlights
+            </h3>
             <ul className="mt-4 space-y-3 text-sm text-slate-200/90">
               {programmeHighlights.map((item) => (
                 <li key={item.label}>
@@ -129,7 +136,17 @@ export function Footer() {
         </div>
 
         <div className="mt-14 border-t border-white/15 pt-8 text-sm text-slate-200/80 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
-          <p>© 2025 SPARKme. All rights reserved. Powered by OpenET Technologies S.p.A.</p>
+          <p>
+            © 2025 SPARKme. All rights reserved. Powered by{" "}
+            <a
+              href="https://openet.it/en/company/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-white transition"
+            >
+              OpenET Technologies S.p.A.
+            </a>
+          </p>
           <div className="flex flex-wrap gap-6 text-slate-200/80">
             <a href="#privacy" className="hover:text-white transition">
               Privacy Policy
@@ -137,12 +154,15 @@ export function Footer() {
             <a href="#terms" className="hover:text-white transition">
               Terms of Service
             </a>
-            <a href="#program-guidelines" className="hover:text-white transition">
+            <a
+              href="#program-guidelines"
+              className="hover:text-white transition"
+            >
               Programme Guidelines
             </a>
           </div>
         </div>
       </div>
     </footer>
-  )
+  );
 }

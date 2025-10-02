@@ -16,8 +16,7 @@ export default function HomePage() {
         <Programs />
         <Features />
         <Partners />
-        <FAQ />
-        
+        <FAQ />        
       </main>
       <Footer />
     </div>
