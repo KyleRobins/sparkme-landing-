@@ -77,7 +77,7 @@ export function Header() {
             whileTap={{ scale: 0.95 }}
           >
             <Button className="bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90" asChild>
-              <a href="mailto:contactpoint@sparkme.space?subject=SPARKme%20Application" className="text-primary-foreground">Apply Now</a>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSf1xyzb79uuZAfYZ1_SxUcjCCH_QunNduLIZ-qOjqUPezyJUw/viewform?usp=header" target="_blank" rel="noopener noreferrer" className="text-primary-foreground">Apply Now</a>
             </Button>
           </motion.div>
 

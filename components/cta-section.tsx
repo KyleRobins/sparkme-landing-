@@ -57,7 +57,7 @@ export function CtaSection() {
               className="w-full sm:w-auto text-base sm:text-lg px-8 py-5 bg-primary hover:bg-primary/90 text-primary-foreground glow-cyan"
               asChild
             >
-              <a href="mailto:contactpoint@sparkme.space?subject=SPARKme%20Public%20Officers%20Application">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSeiMwvTRsMIMcw7_lflkBibi3kwnAnhr9T1eGZQZ0d785KJOw/viewform?usp=header" target="_blank" rel="noopener noreferrer">
                 <Users className="h-5 w-5" />
                 Apply for Public Officers Programme
                 <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
@@ -69,7 +69,7 @@ export function CtaSection() {
               className="w-full sm:w-auto text-base sm:text-lg px-8 py-5 bg-transparent border-secondary text-secondary-foreground hover:bg-secondary hover:text-secondary-foreground glow-orange"
               asChild
             >
-              <a href="mailto:contactpoint@sparkme.space?subject=SPARKme%20Student%20Programme%20Application">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSf1xyzb79uuZAfYZ1_SxUcjCCH_QunNduLIZ-qOjqUPezyJUw/viewform?usp=header" target="_blank" rel="noopener noreferrer">
                 <Rocket className="h-5 w-5" />
                 Apply for Students Programme
               </a>
